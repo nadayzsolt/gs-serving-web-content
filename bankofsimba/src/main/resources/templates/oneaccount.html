@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>OneAccount</title>
+</head>
+<body>
+    <h1>The very bank account</h1>
+<table>
+    <thead>
+    <th>Client's name</th>
+    <th>Balance</th>
+    <th>Animal type</th>
+    </thead>
+    <tr>
+        <td th:text="${theAccount.name}"></td>
+        <td th:text="${theAccount.balance}"></td>
+        <td th:text="${theAccount.animalType}"></td>
+    </tr>
+</table>
+</body>
+</html>

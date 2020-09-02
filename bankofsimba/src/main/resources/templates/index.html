@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>SimbaBank Main Page</title>
+</head>
+<body>
+<table>
+    <thead>
+    <th>Client's name</th>
+    <th>Balance</th>
+    <th>Animal type</th>
+    </thead>
+    <tr th:each="bankAccount: ${accounts}" th:object="${bankAccount}">
+    <td th:text="*{name}"></td>
+    <td th:text="*{balance}"></td>
+    <td th:text="*{animalType}"></td>
+    </tr>
+</table>
+
+</body>
+</html>
